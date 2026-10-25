@@ -1,0 +1,11 @@
+
+
+#100以内素数
+#素数要求，大于1且只能被1和他本身整除
+for i in range(0, 101):
+    if i > 1:
+        for j in range(2, i):
+            if i % j == 0:
+                break
+        else:#这个else对应for，如果i被j整除，那么不会进入else，反之，直接break，进入else
+              print(i)
